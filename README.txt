@@ -1,1 +1,0 @@
-This is an uzhgorod2000@yahoo.com home work repository (file in "main")
