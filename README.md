@@ -1,1 +1,1 @@
-This is an uzhgorod2000@yahoo.com home work repository
+This is an uzhgorod2000@yahoo.com homework repository (file in HW_02)
