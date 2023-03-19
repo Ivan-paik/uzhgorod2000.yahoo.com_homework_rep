@@ -25,7 +25,7 @@ while i <= 6:
     print(j1)
     i += 1
 
-# v.4 Two loops - more loops. One Loop
+# v.4 Two loops - much loops. One Loop version
 j = ''
 for i in range(1, 6):
     j = j + str(i) + ' '

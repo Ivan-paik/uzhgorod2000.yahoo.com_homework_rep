@@ -5,7 +5,7 @@ for letter in  users_text:
     elif str.islower(letter):
         print(f"'{letter}'- is a letter in lover case")
     elif str.isdigit(letter):
-        if (int(letter) % 2) == 0:
+        if int(letter) % 2 == 0:
             print(f"'{letter}'- is even digit")
         else:
             print(f"'{letter}'- is odd digit")
