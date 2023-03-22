@@ -5,11 +5,11 @@ number = 1
 
 # Ручний парсинг рядка для пошуку обох чисел і тільки з тими функціями, які проходили.
 for digit in user_input:
-    if digit != " ":
-        if number == 1 :
+    if digit != " ": # просто шукаєм перший пробіл
+        if number == 1 : # формуємо перше число
             a = a + digit
         else:
-            b = b + digit
+            b = b + digit # формуємо друге число
     else:
         number = 2
 
