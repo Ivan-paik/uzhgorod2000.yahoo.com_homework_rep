@@ -28,5 +28,15 @@ print(users.values())
 
 # show <name>: детальна інформація по імені
 
-while Thrue:
-
+while True:
+    print("press A - add, B - , C - , X-exit")
+    user_data = input()
+    match user_data:
+        case "A":
+            print("A-a")
+        case "B":
+            print("B-b")
+        case "X":
+            break
+        case _:
+            print("Press correct option. Try again:")
