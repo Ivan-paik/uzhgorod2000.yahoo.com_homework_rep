@@ -1,11 +1,11 @@
-user_input = input('Input two number separated by space, please: ')
+user_input = input('Input two numbers separated by space, please: ')
 
 a = b = ''
 number = 1
 
 # Ручний парсинг рядка для пошуку обох чисел і тільки з тими функціями, які проходили.
 for digit in user_input:
-    if digit != " ": # просто шукаєм перший пробіл
+    if digit != " ": # просто шукаєм пробіл після числа, бо це розділювач
         if number == 1 : # формуємо перше число
             a = a + digit
         else:
@@ -13,7 +13,7 @@ for digit in user_input:
     else:
         number = 2
 
-def Exponentiation (x, y):
+def Exponentiation(x, y):
     z = x ** y
     return(z)
 
