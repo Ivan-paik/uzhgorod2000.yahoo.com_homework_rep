@@ -1,51 +1,41 @@
-users = {
+phonebook_dict = {
     "+11111111": "Tom",
     "+33333333": "Bob",
-    "+55555555": "Alice"
+    "+55555555": "Alice",
+    "+44444444v": "Tom"
 }
 key = "+55555555"
-if key in users:
-    user = users[key]
-#    print(user)
+if key in phonebook_dict:
+    user = phonebook_dict[key]
+#    print(phonebook_dict)
 else:
     print("Елемент не знайдено")
 
-#print(users)
-
+#print(phonebook_dict)
 # stats: кількість записів
-
-# Add user
-users["+66666666"] = "Dennis"
-
-#print(users)
-
-# Del user by phone
-del users["+66666666"]
-#print(users)
-
-# Show all values
-#print(users.values())
-
 # show <name>: детальна інформація по імені
 
 while True:
-    print("Press key for continue: A - add item, V - view items, N - viev name, D - delete by name, X - exit")
+    print("Press key for continue: s - stats, a - add item, v - view items, n - name list, d - delete by name, x - exit")
     operation = input()
     match operation:
-        case "A":
+        case "s": # stats
+            print(len(phonebook_dict))
+        case "a": #  add item
             add_data_lst = input("Enter the the phone number and name separated by space: ").split()
-            users[add_data_lst[0]] = add_data_lst[1]
+
+            phonebook_dict[add_data_lst[0]] = add_data_lst[1]
             print("Add item complete")
-        case "V":
-            for key, value in users.items():
+        case "v": # view items
+            for key, value in phonebook_dict.items():
                 print(f"{value} have a phone number {key}")
-        case "N":
-            for value in user.values():
-             print(value)
-        case "D":
-            add_data = input("Enter the name: ")
-            del users[add_data]
-        case "X":
+        case "n": # name list
+            for value in phonebook_dict.values():
+                print(value)
+        case "d": # delete by name
+            add_data = input("Enter the name: ") #need name
+            del phonebook_dict[add_data]
+        case "x": # exit
             break
         case _:
-            print("Press correct option. Try again:")
+            print("Select incorrect option. Try again:")
