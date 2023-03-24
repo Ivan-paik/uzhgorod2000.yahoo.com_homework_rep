@@ -1,5 +1,5 @@
 # Testing data.
-# Unique numbers. One man have a few phone numbers.
+# Unique numbers. One man have a few phone numbers. Otherwise may be used get(key) in some commands realisation.
 phonebook_dict = {
     "+11111111": "Tom",
     "+33333333": "Bob",
