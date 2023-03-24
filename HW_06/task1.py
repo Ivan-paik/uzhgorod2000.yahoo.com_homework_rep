@@ -13,7 +13,7 @@ for digit in user_input:
     else:
         number = 2
 
-def Exponentiation(x, y):
+def exponentiation(x, y):
     z = x ** y
     return(z)
 
