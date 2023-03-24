@@ -1,6 +1,6 @@
 input_text = input("Введіть тестові дані:")
 if str.isdigit(input_text):
-    if (int(input_text) % 2) == 0:
+    if int(input_text) % 2 == 0:
         print("Введенні дані є парним числом")
     else:
         print("Введенні дані є непарним числом")
