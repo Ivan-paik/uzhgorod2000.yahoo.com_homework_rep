@@ -1,4 +1,4 @@
-age_in_month = (2022-1977)*12+4
+age_in_month = (2022-1977) * 12 + 4
 
 age_in_years = age_in_month // 12
 
