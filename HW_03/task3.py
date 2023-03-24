@@ -6,4 +6,4 @@ print('v1: ', age_in_years)
 
 # v2 privedennya tipiv
 age_in_years = int(age_in_month / 12)
-print('v2: ',age_in_years)
+print('v2: ', age_in_years)
