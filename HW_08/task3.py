@@ -2,7 +2,7 @@ lst = ["qwe", "wEr", "erT", "rTY", "YuI"]
 
 # v1. via definition
 def in_upper(symbol):
-    return(symbol.upper())
+    return symbol.upper()
 
 upper_list = list(map(in_upper, lst))
 print(upper_list)
