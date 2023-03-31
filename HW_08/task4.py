@@ -5,7 +5,7 @@ def digit_only(symbol):
     if isinstance(symbol, (float, int)):
         return True
     else: # for str type only
-        return(symbol.isdecimal())
+        return symbol.isdecimal()
 
 digit_list = list(filter(digit_only, lst))
 print(f"result: {digit_list}")
