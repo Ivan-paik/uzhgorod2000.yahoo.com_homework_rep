@@ -2,7 +2,7 @@
 lst = ["abc", "44", "0", 3, 1.5, .2, "2.2", "44", 2e1, 0x11, "4*7"]
 
 def digit_only(symbol):
-    if type(symbol) == int or type(symbol) == float:
+    if isinstance(symbol, (float, int)):
         return True
     else: # for str type only
         return(symbol.isdecimal())
