@@ -6,7 +6,7 @@ class TenEqualSigns:
         if exc_type != None:
             print(f"Error {exc_type.__name__} was happend with {'key' + str(i)}")
         print("==========")
-        return 1 #  something to return ???
+        return True
 
 
 my_dict = {"key1":"one", "key2":"two", "key4":"four"}
