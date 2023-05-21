@@ -1,0 +1,6 @@
+INSERT INTO users (first_name, last_name, age) VALUES
+    ("John", "Smith", 18),
+    ("Johnny", "Walker", 156),
+    ("Jim", "Beam", 228),
+    ("Jack", "Daniel's", 157),
+    ("Pierre", "Pérignon", 102)
