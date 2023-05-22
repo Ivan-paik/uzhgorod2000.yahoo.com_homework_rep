@@ -1,7 +1,7 @@
 class Bot:  # name of class
 
     def __init__(self, name):
-        self.name = name  # this is attribute of class
+        self.name = name  # this is attribute of class instance
 
     def say_name(self):
         print(self.name)
