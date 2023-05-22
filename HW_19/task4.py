@@ -3,10 +3,7 @@ class User:
         self.name = name
 
     def __eq__(self, other):
-        if other.name.upper() == self.name.upper():
-            return True
-        else:
-            return False
+        return other.name.upper() == self.name.upper():
 
 
 first_user = User('OLEKSII')
