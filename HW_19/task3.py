@@ -1,8 +1,7 @@
 class MyStr(str):
 
     def __str__(self):
-        res = super().__str__()
-        return res.upper()
+        return self.upper()
 
 
 my_str = MyStr('test')
