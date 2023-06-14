@@ -1,0 +1,69 @@
+body {
+    padding: 20px;
+    /*font-size: 20px;*/
+}
+
+#red {
+    color: red;
+}
+
+.bg-color {
+    background: lightyellow;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.header-container {
+	display: grid;
+    /*border: 1px solid black;*/
+	grid-template-areas: "foto name name name name"
+}
+
+.my-foto {
+	grid-area: foto;
+    padding: 15px;
+    text-align: center;
+}
+
+.my-name {
+	grid-area: name;
+}
+
+.header-img {
+    width: 150px;
+    height: 250px;
+}
+
+.about {
+    padding: 20px;
+ }
+
+.task-container {
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    padding: 10px;
+}
+
+.column {
+    text-align: center;
+}
+
+.row {
+    padding: 5px;
+}
+
+.experience-table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
