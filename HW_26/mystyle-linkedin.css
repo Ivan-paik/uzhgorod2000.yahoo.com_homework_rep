@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(243, 242, 239);
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: -apple-system, system-ui, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #000000E6;
+}
+
+.img-bg {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: -122px;
+    margin-left: 50px;
+}
+
+#block-main{
+    border:10px solid gba(0, 0, 0, 0.9);
+    border-radius: 10px 10px 10px 10px;
+    background-color:#fff;
+    margin-bottom: 20px;
+}
+
+#block-profile {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 140px;
+}
+
+#block-row {
+float: left;
+display: block;
+width: 50%;
+}
+
+#block-about {
+    padding: 24px;
+}
+
+.my-table {
+    border-collapse: collapse;
+    margin: 20px;
+    width: 90%
+}
