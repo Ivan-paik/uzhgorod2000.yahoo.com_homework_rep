@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1>Parameters</h1>
+    <table width=20%>
+    <tbody>
+    <td>parameter</td>
+    <td>value</td>
+    {% for item in params_list %}
+        <tr>
+          <td>{{ item }}</td>
+          <td>{{ params_list.get(item) }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
