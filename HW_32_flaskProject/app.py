@@ -18,6 +18,7 @@ dictConfig({
 })
 
 app = Flask(__name__)
+app.secret_key = "super puper secret key"
 
 from views import *
 

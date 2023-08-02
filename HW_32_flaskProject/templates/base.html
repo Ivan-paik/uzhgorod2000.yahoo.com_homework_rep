@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>
+        {% block title %}
+            People and literature
+        {% endblock %}
+    </title>
+</head>
+<body>
+    {% if 'login_name' in session %}
+        <div>Hello, {{ login_name }}
+        <form method="POST" action="/logout">
+            <input type="submit" value="logout">
+        </form>
+        </div>
+        {% block body %}
+        {% endblock %}
+    {% else %}
+        <a href={{ url_for('login') }}>Please, login here to start</a>
+    {% endif %}
+</body>
+</html>
