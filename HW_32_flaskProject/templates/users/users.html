@@ -1,13 +1,13 @@
-{% extends 'base.html' %}
-
-{% block title %}
-    {{ title }}
-{% endblock %}
-
-{% block body %}
-    <h1>Random user list</h1>
-    {% for user in users_list %}
-        {{ user['user_name'] }}</br>
-    {% endfor %}
-    </ul>
-{% endblock %}
+{# Not use, send JSON #}
+{#{% extends 'base.html' %}#}
+{##}
+{#{% block title %}#}
+{#    {{ title }}#}
+{#{% endblock %}#}
+{##}
+{#{% block body %}#}
+{#    <h1>User list</h1>#}
+{#    {% for user in users_list %}#}
+{#        {{ user['first_name'] }} {{ user['last_name'] }}, age {{ user['age'] }}</br>#}
+{#    {% endfor %}#}
+{#{% endblock %}#}

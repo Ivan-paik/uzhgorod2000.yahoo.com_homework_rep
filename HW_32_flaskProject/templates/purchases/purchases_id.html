@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block menu %}
+    <a href="{{ url_for('home') }}">Home</a> |
+    <a href="{{ url_for('purchases') }}">Purchases</a>
+{% endblock %}
+
+{% block body %}
+    <h1>Purchases list</h1>
+    {% if count_purchases > 0 %}
+        {% for purchase in purchases_list %}
+            Purchase id: {{ purchase['id'] }}</br>
+            User name: {{ purchase['first_name'] }} {{ purchase['last_name'] }}</br>
+            Title: {{ purchase['title'] }}</br>
+            Author: {{ purchase['author'] }}
+        {% endfor %}
+    {% else %}
+        <h2>Purchases with id {{ purchase_id }} not found.</h2>
+    {% endif %}
+{% endblock %}
