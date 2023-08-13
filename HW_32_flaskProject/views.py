@@ -123,17 +123,13 @@ def books_details(book_id):
 @app.route('/purchases')  # output format - HTML
 def purchases():
     filters = request.args
+    query = db.select(Purchases.id, Purchases.book_id, Purchases.user_id, Books.title, Books.author,
+        Users.first_name, Users.last_name)\
+        .join(Users, Purchases.user_id == Users.id)\
+        .join(Books, Purchases.book_id == Books.id)
+
     if filters.get('size'):
-        query = db.select(Purchases.id, Purchases.book_id, Purchases.user_id, Books.title, Books.author,
-            Users.first_name, Users.last_name)\
-            .join(Users, Purchases.user_id == Users.id)\
-            .join(Books, Purchases.book_id == Books.id)\
-            .limit(int(filters.get('size')))
-    else:
-        query = db.select(Purchases.id, Purchases.book_id, Purchases.user_id, Books.title, Books.author,
-                    Users.first_name, Users.last_name)\
-                    .join(Users, Purchases.user_id == Users.id)\
-                    .join(Books, Purchases.book_id == Books.id)
+        query = query.limit(int(filters.get('size')))
 
     purchases = db.session.execute(query)
     contex = {
