@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Random books list</h1>
+    <h1>{{ title }}</h1>
     <ul>
-        {% for book in books_random_list %}
-            <li>{{ book['title'] }}</li>
+        {% for book in book_list %}
+            <li>author: {{ book['author'] }}, title: {{ book['title'] }}, price: {{ book['price'] }}, year: {{ book['year'] }}</li>
         {% endfor %}
     </ul>
 {% endblock %}

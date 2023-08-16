@@ -9,13 +9,15 @@
         {% endblock %}
     </title>
 </head>
+
 <body>
     {% if 'login_name' in session %}
-        <div>Hello, {{ login_name }}
-        <form method="POST" action="/logout">
-            <input type="submit" value="logout">
+        Hello, {{ login_name }}
+        <form method="POST" action="/logout"> <input type="submit" value="logout">
         </form>
-        </div>
+        {%  block menu %}
+            <a href="{{ url_for('home') }}">Home</a>
+        {% endblock %}
         {% block body %}
         {% endblock %}
     {% else %}

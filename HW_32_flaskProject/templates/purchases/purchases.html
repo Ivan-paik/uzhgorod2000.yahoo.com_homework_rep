@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1>Purchases list</h1>
+    <table width=50%>
+    <tbody>
+        <td>Purchase id</td>
+        <td>User name</td>
+        <td>Title</td>
+        <td>Author</td>
+      {% for purchase in purchases_list %}
+        <tr>
+            <td><a href="{{ url_for('purchase_details', purchase_id=purchase['id']) }}">
+                {{ purchase['id'] }}</a>
+            </td>
+            <td>{{ purchase['first_name'] }} {{ purchase['last_name'] }}</td>
+            <td><a href="{{ url_for('books_details', book_id=purchase['book_id']) }}">
+                {{ purchase['title'] }}</a>
+            </td>
+            <td>{{ purchase['author'] }}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+{% endblock %}
+
+
+
+

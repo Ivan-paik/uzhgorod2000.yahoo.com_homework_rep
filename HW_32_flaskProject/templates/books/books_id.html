@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block menu %}
+    <a href="{{ url_for('home') }}">Home</a> |
+    <a href="{{ url_for('purchases') }}">Purchases</a> |
+    <a href="{{ url_for('books_list') }}">Books</a>
+{% endblock %}
+
+{% block body %}
+    <h1>Books</h1>
+    {% if count_book > 0 %}
+        {% for book in books_list %}
+            <h2>{{ book['title'] }} - {{ book['author'] }}. {{ book['year'] }}. {{ book['price'] }}</h2>
+        {% endfor %}
+    {% else %}
+        <h2>Book with id {{ book_id }} not found.</h2>
+    {% endif %}
+{% endblock %}
