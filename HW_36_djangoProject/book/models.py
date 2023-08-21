@@ -11,3 +11,5 @@ class Book(models.Model):
         constraints = [
             models.UniqueConstraint(fields=['title', 'author'], name="%(app_label)s_%(class)s_unique")
         ]
+        verbose_name = "Book name"
+        verbose_name_plural = "Books name"
