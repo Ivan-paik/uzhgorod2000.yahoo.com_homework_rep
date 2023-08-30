@@ -16,3 +16,5 @@ class Purchase(models.Model):
     class Meta:
         db_table = 'purchase'
         ordering = ('-date',)
+        verbose_name = "Purchase list"
+        verbose_name_plural = "Purchases list"
